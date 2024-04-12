@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-image: url('/Centro Veterinario/img/fondo.jpg');
     color: #fff;
     padding: 10px 0;
     text-align: center;
