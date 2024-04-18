@@ -18,8 +18,16 @@ header {
 
 h1 {
     font-size: 2em;
+    clear: left;
 }
 
+.perro {
+    width: 20%;
+}
+
+.gato {
+    width: 20%;
+}
 
 .logo {
     background-size: cover;
@@ -49,36 +57,120 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+
+
+
+
+nav {
+    background-color: rgb(19, 58, 50);
+    padding: 20px 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 27px;
+    color: #333;
+    display: inline-block;
+    border-right: 3px solid #ccc; /* Agrega una línea sólida a la derecha de cada enlace */
+    padding-right: 10px; /* Añade espacio entre las palabras y las líneas */
+    margin-right: 10px; /* Añade espacio entre los enlaces */
+}
+
+nav a:last-child {
+    border-right: none;
+}
+
+nav a:hover {
+    color: #000;
+    text-align: center;
+}
 main {
     padding: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
 
 
 
 
 
-.card {
-    border: 1px solid black;
+
+.card-1 {
     padding: 20px;
+    width: 60%;
+    margin-right: 10px;
+    background-color: rgb(237, 237, 175);
+   
   }
   
+  .card-2 {
+    padding: 20px;
+    width: 600px;
+    margin-right: 10px;
+    background-color: rgb(237, 237, 175);
+   
+  }
+
   .card h2 {
-    color: brown;
+    color: black;
   }
   
   .card p {
     font-size: small;
+    clear: left;
   }
   
   .card img {
     float: right;
     border-radius: 50%;
+    clear: right;
+    width: 20%;
   }
   
+
+
+  .formulario-cita {
+    background-color: rgba(40, 91, 81, 0.9);
+    border: 1px solid #ccc; /* Agregar un borde al formulario */
+    padding: 20px; /* Agregar relleno al formulario */
+    float: right; /* Alinear el formulario a la derecha */
+    width: 40%; 
+    border-radius: 20px;
+}
+
+.formulario-cita h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.formulario-cita label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario-cita input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.formulario-cita button {
+    background-color: #7a6f6f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center; /* Centra el botón */
+    display: block; /* Para que el botón ocupe todo el ancho */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    
+}
+
+
+footer {
+    background-color: rgb(19, 58, 50);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
