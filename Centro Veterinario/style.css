@@ -8,8 +8,11 @@ body {
 header {
     background-image: url('/Centro Veterinario/img/fondo.jpg');
     color: #fff;
-    padding: 10px 0;
     text-align: center;
+    margin: auto;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 20px;
 }
 
 .encabezado {
@@ -19,6 +22,15 @@ header {
 h1 {
     font-size: 2em;
     clear: left;
+    text-align: left;
+    color: #333;
+}
+
+h2 {
+    font-size: 2em;
+    clear: left;
+    text-align: left;
+    color: #333;
 }
 
 .perro {
@@ -27,13 +39,9 @@ h1 {
 
 .gato {
     width: 20%;
+    float: right;
 }
 
-.logo {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 
 nav ul {
@@ -65,6 +73,7 @@ nav {
     background-color: rgb(19, 58, 50);
     padding: 20px 10px;
     text-align: center;
+
 }
 
 nav a {
@@ -89,7 +98,10 @@ nav a:hover {
 main {
     padding: 20px;
 }
-
+hr{
+    width: 20px;
+    transform: rotate(90deg);
+  }
 
 
 
@@ -97,19 +109,22 @@ main {
 
 
 .card-1 {
-    padding: 20px;
-    width: 60%;
+    width: 40%;
     margin-right: 10px;
     background-color: rgb(237, 237, 175);
-   
+    border-radius: 20px;
+    margin: auto;
+    padding: 1rem;
+    
   }
   
   .card-2 {
-    padding: 20px;
-    width: 600px;
+    width: 40%;
     margin-right: 10px;
     background-color: rgb(237, 237, 175);
-   
+    border-radius: 20px;
+    margin: auto;
+    padding: 1rem;
   }
 
   .card h2 {
@@ -121,12 +136,7 @@ main {
     clear: left;
   }
   
-  .card img {
-    float: right;
-    border-radius: 50%;
-    clear: right;
-    width: 20%;
-  }
+ 
   
 
 
@@ -137,6 +147,7 @@ main {
     float: right; /* Alinear el formulario a la derecha */
     width: 40%; 
     border-radius: 20px;
+    display: inline-block;
 }
 
 .formulario-cita h3 {
@@ -173,4 +184,11 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    border-radius: 20px;
+    align-content: center;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
+
