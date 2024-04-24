@@ -13,21 +13,26 @@ header {
     width: 70%;
     padding: 1rem;
     border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .encabezado {
     margin-bottom: 20px;
+    
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 60px;
     clear: left;
     text-align: left;
     color: #333;
+    margin: 0;
+    font-weight: 900;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 25px;
     clear: left;
     text-align: left;
     color: #333;
@@ -109,17 +114,16 @@ hr{
 
 
 .card-1 {
-    width: 40%;
+    width: 80%;
     margin-right: 10px;
     background-color: rgb(237, 237, 175);
     border-radius: 20px;
     margin: auto;
     padding: 1rem;
-    
   }
   
   .card-2 {
-    width: 40%;
+    width: 80%;
     margin-right: 10px;
     background-color: rgb(237, 237, 175);
     border-radius: 20px;
@@ -127,25 +131,78 @@ hr{
     padding: 1rem;
   }
 
-  .card h2 {
+  .card-1 h2 {
     color: black;
+    margin-top: 0;
   }
   
-  .card p {
+  p {
+    font-size: small;
+    clear: left;
+   
+  }
+  .card-2 h2 {
+    color: black;
+    margin-top: 0;
+  }
+  
+  .card-2 p {
     font-size: small;
     clear: left;
   }
-  
  
-  
+.contenido {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+}
 
+.article-container {
+    width: 100%;
+    border-radius: 30px;
+    grid-column: 1/2;
+}
+
+.article p {
+    margin-bottom: 1rem;
+}
+
+.article-container img {
+    border-radius: 20px;
+}
+ 
+.article a {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+.asidebar {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1/3;
+    margin: 30px;
+    border-radius: 20px;
+}
+  
+.sidebar {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
   .formulario-cita {
     background-color: rgba(40, 91, 81, 0.9);
     border: 1px solid #ccc; /* Agregar un borde al formulario */
     padding: 20px; /* Agregar relleno al formulario */
     float: right; /* Alinear el formulario a la derecha */
-    width: 40%; 
+    width: 60%; 
     border-radius: 20px;
     display: inline-block;
 }
@@ -153,11 +210,18 @@ hr{
 .formulario-cita h3 {
     font-size: 18px;
     margin: 0 0 10px;
+    color: #fff;
+    text-align: center;
 }
 
 .formulario-cita label {
     display: block;
     margin-bottom: 5px;
+}
+
+.formulario-cita label p {
+    color: #fff;
+    text-align: left;
 }
 
 .formulario-cita input {
@@ -188,7 +252,7 @@ footer {
     align-content: center;
     width: 70%;
     display: flex;
-    justify-content: center;
     margin: auto;
 }
+
 
