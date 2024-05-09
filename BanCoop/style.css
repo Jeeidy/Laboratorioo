@@ -1,0 +1,263 @@
+body {
+    margin: 2rem; /*Le da la margen a sus alrededores*/
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex; /*Alinea el título y la imagen del encabezado*/
+    justify-content: space-between; /*Da el espacio eente los dos título y la imagen del encabezado*/
+    align-items: center; /*Lo centra todo*/
+    background-color: #a9aaac; /*Fondo al encabezado*/
+    padding: 1rem;
+    height: 200px; /*Da mas espacio en el encabezado*/
+    border-radius: 5px; /*Le da el borde a la caja*/
+}
+
+.header-content {
+    display: flex; /*Logo a la derecha*/
+    justify-content: space-between;
+    align-items: center; /*centra el logo*/
+    width: 80%;
+}
+
+.header-title-container {
+    display: flex; /*Coloca los dos títulos uno al lado del otro*/
+    flex-direction: column; /*Un título bajo el otro título*/
+}
+
+.header-title {
+    color: black;
+    margin: 0;
+}
+header img {
+    position: relative;
+    width: 18rem;
+    height: auto;
+}
+
+nav {
+    background-color: #f5f115; /*Fondo al menú*/
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none; /*Le quita los puntos del menú*/
+    margin: 0;
+    padding: 0; /*Lo pone a la izquierda al borde*/
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline; /*Pone el menú en una sola línea*/
+    margin-right: 1rem; /*Le da el espacio entre cada palabra del menú*/
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none; /*Le quita la línea de abajo de cada palabra*/
+    padding: 0.5rem;
+    border-right: 3px solid #ccc; /* Agrega una línea sólida a la derecha de cada enlace */
+}
+
+nav ul li a:hover {
+    background-color: rgb(252, 195, 8);
+}
+
+
+.container {
+    display: flex; /* Las otras dos tarjetas las pone en bloque una al lado de la otra. Las 4 tarjetas las alinea a la derecha en fila vertical*/
+    grid-template-columns: 1fr 3fr;
+    gap: 70px;
+}
+
+.title {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin: 0 0 20px 0;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.input-group input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 200px;
+}
+
+
+.left-card {
+    width: 120%;
+    text-align: left;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0%;
+    background-color: rgb(180, 185, 183);
+}
+
+.cardt2 {
+    width: 120%;
+    height: 54%;
+    background-color: rgb(37, 37, 37);
+}
+
+.ban {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+
+.right-cards {
+    display: flex; /*Alinea las 4 en una sola ilera horizontal*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.card1{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+ }
+
+.card2{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+}
+
+.card3{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+}
+.card4{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+}
+
+.credito {
+    width: 150px;
+    justify-content: center;
+}
+
+.card input {
+    width: 100%;
+    margin-bottom: 10px; /*Le dio espacio entre las casillas*/ 
+    padding: 5px;
+    border-radius: 1px;
+    border: 3px solid #9b9b94;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #f5f115;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(40, 44, 43);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+    align-content: center;
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    header {
+      height: 150px; /* Reducir la altura del encabezado */
+      padding: 0.5rem;
+    }
+
+   .header-content {
+      width: 90%; /* Aumentar el ancho para adaptarse a la pantalla del móvil*/
+    }
+
+   .header-title-container {
+      flex-direction: column; /*Apilar título y logotipo verticalmente */
+    }
+
+    header img {
+      width: 10rem; /*Reducir el tamaño de la imagen */
+    }
+  
+    
+    nav {
+      padding: 5px;
+    }
+    nav ul {
+      flex-direction: column; /* Apilar elementos de navegación verticalmente */
+    }
+    nav ul li {
+      margin-right: 0; /* Eliminar margen entre elementos de navegación */
+    }
+  
+  
+   .container {
+      flex-direction: column; /* Apilar cartas verticalmente */
+      gap: 20px;
+    }
+   .left-card {
+      width: 90%; /* Aumentar el ancho para adaptarse a la pantalla del móvil */
+    }
+   .right-cards {
+      flex-wrap: nowrap; 
+    }
+   .card1,.card2,.card3,.card4 {
+      width: 90%; 
+      margin: 10px;
+    }
+  
+    
+    footer {
+      width: 90%; 
+      padding: 5px 0;
+    }
+  }
